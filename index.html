@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BhardwajDeveloper - Innovative Mobile Experiences</title>
+    <meta name="description" content="Creating beautiful, intuitive apps that solve real-world problems. Learn programming, prepare for interviews, and enhance your skills with Programming Buddy and other innovative mobile applications.">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="BhardwajDeveloper - Innovative Mobile Experiences">
+    <meta property="og:description" content="Master Java, C, C++, and Python with Programming Buddy. Interactive tutorials, interview preparation, and practice quizzes for aspiring developers.">
+    <meta property="og:type" content="website">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="section-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span>BhardwajDeveloper</span>
+                </div>
+                <div class="nav-links">
+                    <button onclick="scrollToSection('home')">Home</button>
+                    <button onclick="scrollToSection('apps')">Our Apps</button>
+                    <button onclick="scrollToSection('features')">Features</button>
+                    <button onclick="scrollToSection('screenshots')">Screenshots</button>
+                    <button onclick="scrollToSection('testimonials')">Testimonials</button>
+                    <button onclick="scrollToSection('contact')">Contact</button>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <button onclick="scrollToSection('home')">Home</button>
+                <button onclick="scrollToSection('apps')">Our Apps</button>
+                <button onclick="scrollToSection('features')">Features</button>
+                <button onclick="scrollToSection('screenshots')">Screenshots</button>
+                <button onclick="scrollToSection('testimonials')">Testimonials</button>
+                <button onclick="scrollToSection('contact')">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="section-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Innovative Mobile <span class="text-primary">Experiences</span></h1>
+                    <p>Creating beautiful, intuitive apps that solve real-world problems. Learn programming, prepare for interviews, and enhance your skills with our comprehensive mobile applications.</p>
+                    <div class="hero-buttons">
+                        <button onclick="scrollToSection('apps')" class="btn-primary">
+                            Explore Our Apps
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button onclick="scrollToSection('contact')" class="btn-secondary">
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <img src="attached_assets/Screenshot_20250613_103346_1753175831707.png" alt="Programming Buddy App Interface">
+                        </div>
+                        <div class="floating-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps Showcase -->
+    <section id="apps" class="apps-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Our Mobile Apps</h2>
+                <p>Discover our innovative solutions designed for modern learners and developers</p>
+            </div>
+            <div class="apps-grid">
+                <!-- Programming Buddy - Featured -->
+                <div class="app-card featured">
+                    <div class="app-content">
+                        <div class="app-header">
+                            <div class="app-icon programming-buddy">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="app-title">
+                                <span class="featured-badge">FEATURED</span>
+                                <h3>Programming Buddy</h3>
+                            </div>
+                        </div>
+                        <p>Master Java, C, C++, and Python with interactive tutorials, interview questions, and practice quizzes. Perfect for students and job seekers.</p>
+                        <div class="app-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Step-by-step tutorials</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Interview preparation</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Interactive quizzes</span>
+                            </div>
+                        </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.vishal.programming_buddy" target="_blank" class="app-button programming-buddy-btn">
+                            <i class="fab fa-google-play"></i>
+                            Get on Google Play
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quizillo -->
+                <div class="app-card">
+                    <div class="app-content">
+                        <div class="app-header">
+                            <div class="app-icon quizillo">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="app-title">
+                                <h3>Quizillo</h3>
+                            </div>
+                        </div>
+                        <p>Play engaging quizzes on Science, Math, GK, and many other exciting topics! Test your knowledge with fun trivia.</p>
+                        <div class="app-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Multiple Categories</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Fun Trivia</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Interactive Gameplay</span>
+                            </div>
+                        </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.techuntried.quiz" target="_blank" class="app-button quizillo-btn">
+                            <i class="fab fa-google-play"></i>
+                            Get on Google Play
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Indian Bike Game -->
+                <div class="app-card">
+                    <div class="app-content">
+                        <div class="app-header">
+                            <div class="app-icon bike-game">
+                                <i class="fas fa-motorcycle"></i>
+                            </div>
+                            <div class="app-title">
+                                <h3>Indian Bike Game Cheat Codes</h3>
+                            </div>
+                        </div>
+                        <p>Unlock every mission, vehicle, and plugin using our latest cheat code collection for Indian Bike Driving 3D.</p>
+                        <div class="app-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Latest cheat codes</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Offline access</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Easy copy & paste</span>
+                            </div>
+                        </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.vishal.bikeDriving3D" target="_blank" class="app-button bike-game-btn">
+                            <i class="fab fa-google-play"></i>
+                            Get on Google Play
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>What Makes Our Apps Special</h2>
+                <p>Our commitment to quality and user experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon primary">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Experience blazing-fast performance with our optimized code and intuitive interfaces.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon accent">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security First</h3>
+                    <p>Your data is protected with industry-leading security protocols and encryption.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon orange">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Easy Navigation</h3>
+                    <p>We design user-friendly interfaces to ensure smooth and intuitive navigation for every user.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon purple">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Beautiful Design</h3>
+                    <p>Enjoy elegant, intuitive interfaces that make using our apps a pleasure.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon blue">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Regular Updates</h3>
+                    <p>We constantly improve our apps with new features and performance enhancements.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon pink">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Support</h3>
+                    <p>We're always open to feedback and ready to help users with any questions or issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>App Screenshots</h2>
+                <p>See the beautiful interface and user experience</p>
+            </div>
+            
+            <!-- App Selection Tabs -->
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab active" onclick="switchApp('programming-buddy')">Programming Buddy</button>
+                    <button class="tab" onclick="switchApp('quizillo')">Quizillo</button>
+                    <button class="tab" onclick="switchApp('bike-game')">Indian Bike Game</button>
+                </div>
+            </div>
+
+            <!-- Screenshots Grid -->
+            <div class="screenshots-grid" id="screenshotsGrid">
+                <!-- Programming Buddy Screenshots (default) -->
+                <div class="screenshot-item">
+                    <div class="screenshot-frame">
+                        <img src="https://play-lh.googleusercontent.com/uQzaOLy6OqTkGqI6nS4XkYt3dXVn8BxBmS8S6fy-WMMi6QixwsDkXzKo6joc8brXlvRM=w526-h296-rw" alt="Programming Buddy Home Screen">
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <div class="screenshot-frame">
+                        <img src="https://play-lh.googleusercontent.com/-bDEaUpfCGcRSeiUYGPpYfshMnYjseUdta5l_bB8F7cnDc1ukzO0M4LZuBYbdGg7eUI=w526-h296-rw" alt="Programming Languages Selection">
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <div class="screenshot-frame">
+                        <img src="https://play-lh.googleusercontent.com/WNAuIBvwcTUdsI8npgnTzHD_CxPqxCunyTjPci1oka3Xui-sKudAI_0uBNRswyjoTUs=w526-h296-rw" alt="Interview Topics Overview">
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <div class="screenshot-frame">
+                        <img src="https://play-lh.googleusercontent.com/zvQw9GT32MCQVZUkIX2vo3XWKQUN8mP9PS0ykhBv4F38CxdJ7v-pdDQzYx3rIa3e-I0=w526-h296-rw" alt="Java Topics List">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>What Our Users Say</h2>
+                <p>Hear from people who love our apps</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Programming Buddy helped me prepare for my coding interview. The Java and Python tutorials are excellent, and the practice questions are very similar to real interviews."</p>
+                    <div class="testimonial-author">
+                        <strong>Rahul Sharma</strong>
+                        <span>Software Developer</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"According to me there is no doubt Quizillo is really very interesting and helpful for me. I have improved a lot by this app."</p>
+                    <div class="testimonial-author">
+                        <strong>Srishti</strong>
+                        <span>Student</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The Indian Bike Game cheat codes work perfectly! Easy to use interface and all the latest codes are available. Great work by BhardwajDeveloper team."</p>
+                    <div class="testimonial-author">
+                        <strong>Arjun Patel</strong>
+                        <span>Gaming Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-container faq-container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Get answers to common questions about our apps</p>
+            </div>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(0)">
+                        <span>Are all your apps available for both iOS and Android?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No, all our applications are developed exclusively for Android devices. You can download them directly from the Google Play Store. We ensure a smooth and consistent experience across all supported Android versions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(1)">
+                        <span>Do your apps offer free versions or trials?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, all our apps are completely free to use and include all core features. To support development, we may occasionally show ads. We aim to keep the experience smooth and non-intrusive.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(2)">
+                        <span>How do you handle data security across your app portfolio?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We take data security very seriously across our entire app catalog. All data is encrypted both in transit and at rest. We use industry-standard security protocols, conduct regular security audits, and comply with privacy regulations including GDPR and CCPA.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(3)">
+                        <span>Do your apps work offline?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most of our apps offer core functionality that works offline. Your data is automatically synced once the device is back online. However, features that rely on real-time content—such as new categories or quiz levels—require an internet connection for full functionality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Have questions about any of our apps? We'd love to hear from you!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>bhardwajdeveloper76@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 9582715843</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Haryana, India</p>
+                        </div>
+                    </div>
+                    <div class="app-support">
+                        <h4>Specific App Support:</h4>
+                        <div class="support-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.vishal.programming_buddy" target="_blank" class="support-link programming-buddy">
+                                Programming Buddy
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.techuntried.quiz" target="_blank" class="support-link quizillo">
+                                Quizillo
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.vishal.bikeDriving3D" target="_blank" class="support-link bike-game">
+                                Indian Bike Game
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="app">Related App</label>
+                            <select id="app" name="app">
+                                <option value="">Select an app</option>
+                                <option value="programming-buddy">Programming Buddy</option>
+                                <option value="quizillo">Quizillo</option>
+                                <option value="bike-game">Indian Bike Game Cheat Codes</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <h3>Explore Our Apps</h3>
+                <p>Download our apps today and transform your digital experience</p>
+                
+                <div class="featured-app">
+                    <div class="featured-badge">Featured App</div>
+                    <h4>Programming Buddy</h4>
+                    <p>Master Java, C, C++, and Python with interactive tutorials and interview preparation!</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.vishal.programming_buddy" target="_blank" class="footer-app-button">
+                        <i class="fab fa-google-play"></i>
+                        GET IT ON Google Play
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 BhardwajDeveloper. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
